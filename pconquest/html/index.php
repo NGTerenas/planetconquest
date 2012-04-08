@@ -23,6 +23,8 @@ set_include_path(
 date_default_timezone_set(APPLICATION_TIMEZONE);
  
 // STEP 2 : Autoloader - Activation de l'auto-chargement des classes 
+// enable autoloader ?
+
 require_once 'Zend/Loader/Autoloader.php';
 Zend_Loader_Autoloader::getInstance()->setFallbackAutoloader(true);
 
