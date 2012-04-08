@@ -1,5 +1,5 @@
 <?php
-phpinfo();
+//phpinfo();
 /**
  * Bootstrap Zend Framework
  * 
@@ -29,15 +29,15 @@ Zend_Loader_Autoloader::getInstance()->setFallbackAutoloader(true);
 // STEP 3 : Session - Activation de la session avant toute sortie IHM
 Zend_Session::start();
 
-// STEP 4 : Initialisation - Création des objets applicatifs indispensables
-// Création de la collection de route pour les redirections d'url rewriting
-// Création de la collection de base de données pour les accès DB
+// STEP 4 : Initialisation - Crï¿½ation des objets applicatifs indispensables
+// Crï¿½ation de la collection de route pour les redirections d'url rewriting
+// Crï¿½ation de la collection de base de donnï¿½es pour les accï¿½s DB
 // Initialisation du module de debug si DISPLAY_DEBUG === true
 include_once(INITIALISATION_FILE);
 
-// STEP 5 : Front Controller - Préparation du Front Controller
+// STEP 5 : Front Controller - Prï¿½paration du Front Controller
 // Enregistrement des plugins
-// Enregistrement des chemins d'accès
+// Enregistrement des chemins d'accï¿½s
 // Enregistrement des routes
 // Enregistrement du mode d'affichage
 $oFrontController = Zend_Controller_Front::getInstance();
